@@ -18,6 +18,15 @@ This project focuses on coral segmentation using the YOLOv8 model and machine le
 
 7. **`seg_coco_json_to_yolo.py`:** This Python script converts annotations in COCO JSON format to the YOLOv8 PyTorch format, ensuring data compatibility with the training model.
 
+## Trained Weights
+
+This repository also includes the following trained weights:
+
+- `dead_coral.pt`
+- `coral.pt`
+
+You can use these weights to directly perform inference with the YOLOv8 model on new coral images.
+
 ## Usage Instructions
 
 1. **Data Preparation:** Organize your images and annotations in the folder structure required by YOLOv8.
