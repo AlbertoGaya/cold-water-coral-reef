@@ -18,16 +18,24 @@ This project focuses on coral segmentation using the YOLOv8 model and machine le
 
 7. **`seg_coco_json_to_yolo.py`:** This Python script converts annotations in COCO JSON format to the YOLOv8 PyTorch format, ensuring data compatibility with the training model.
 
+8. **`CWC_GIS.ipynb`:** Joins the data from telemetry and the .csv from **'mask_%.ipynb'** to create a .csv for QGIS.
+
+9. **`analysis_CWC.ipynb`:** Estadistical analysis of the data and figure extraction.
+
+10. **`images`:** Example images
+
 
 ## Usage Instructions
 
 1. **Data Preparation:** Organize your images and annotations in the folder structure required by YOLOv8.
 2. **Training:** Run the `yolov8_train.ipynb` notebook to train the model on your data.
-3. **Evaluation:** Use `cross-validation.ipynb` to evaluate the performance of the trained model.
-4. **Mask Analysis:** Run `mask_%.ipynb` to analyze the segmentation masks and get information about the area covered by objects.
-5. **Area Estimation (Optional):** If you have telemetry data, use `area_img.ipynb` to estimate the area covered by the images.
-6. **Automatic Annotations (Optional):** If you need to label more images, use `auto_annotate.ipynb` to generate annotations automatically.
-7. **Annotation Conversion:** If your annotations are in COCO JSON format, use `seg_coco_json_to_yolo.py` to convert them to the YOLOv8 PyTorch format.
+3. **Automatic Annotations (Optional):** If you need to label more images, use `auto_annotate.ipynb` to generate annotations automatically.
+4.  **Annotation Conversion:** If your annotations are in COCO JSON format, use `seg_coco_json_to_yolo.py` to convert them to the YOLOv8 PyTorch format.
+5. **Evaluation:** Use `cross-validation.ipynb` to evaluate the performance of the trained model.
+6. **Mask Analysis:** Run `mask_%.ipynb` to analyze the segmentation masks and get information about the area covered by objects.
+7. **Area Estimation (Optional):** If you have telemetry data, use `area_img.ipynb` to estimate the area covered by the images.
+8. **QGIS (Optional):** Creates a GIS importable `CWC_GIS.ipynb`.
+9. **Estadistical analysis:** `analysis_CWC.ipynb`
 
 ## Requirements
 
@@ -39,5 +47,12 @@ Make sure you have the following Python libraries installed:
 - `numpy`
 - `matplotlib`
 - `Pillow (PIL)`
+- `glob`
+- `scipy`
+- `seaborn`
+- `matplotlib.pyplot`
+- `scikit_posthocs`
+- `sklearn`
+
 
 If you have any questions or issues, feel free to open an issue in this repository!
