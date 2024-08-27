@@ -22,7 +22,9 @@ This project focuses on coral segmentation using the YOLOv8 model and machine le
 
 9. **`analysis_CWC.ipynb`:** Estadistical analysis of the data and figure extraction.
 
-10. **`images`:** Example images
+10. **`images`:** Val images
+
+11. **`model_weights`:** https://drive.google.com/file/d/1d6u6H1Dd1CSFnlcBHoR08GrjV3yhhfoJ/view?usp=sharing
 
 
 ## Usage Instructions
